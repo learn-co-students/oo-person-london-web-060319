@@ -72,14 +72,12 @@ def work_out
 end 
 
 def call_friend(friend) 
-    @friend = friend
     friend.happiness += 3 
     self.happiness = @happiness + 3
     return "Hi #{friend.name}! It's #{self.name}. How are you?"
 end 
 
 def start_conversation(friend, topic)
-    @topic = topic
 if topic == 'politics'
     friend.happiness -= 2
     self.happiness -= 2 
